@@ -12,7 +12,14 @@ heading.addEventListener("mouseenter", (e) => {
 // let y = 2025 - x;
 // alert(`you were born in ${y}`);
 
+// const people = ["Mario", "Luigi", "Ryu", "Shaun", "Chun-Li"];
+// people.forEach((person, index) => {
+//   console.log(`${index + 1}: Hello, ${person}`);
+// });
+
 const people = ["Mario", "Luigi", "Ryu", "Shaun", "Chun-Li"];
-people.forEach((person, index) => {
-  console.log(`${index + 1}: Hello, ${person}`);
+let html = "";
+people.forEach((person) => {
+  html += `<li style="color: purple">${person}</li>`;
 });
+document.querySelector("ul").innerHTML = html;

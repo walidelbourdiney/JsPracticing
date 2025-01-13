@@ -12,6 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  flex-direction: column;
 }
 h1,
 h2,
@@ -55,8 +56,8 @@ button:hover {
   color: black;
 }
 ul {
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
   list-style: none;
 }
 img {
