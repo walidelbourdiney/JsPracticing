@@ -8,6 +8,10 @@ body {
   line-height: 1.5;
   color: black;
   background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 h1,
 h2,
@@ -79,4 +83,24 @@ img {
 @media screen and (max-width: 576px) {
   /* Extra small screens */
   /* Styles for mobile screens */
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.loading {
+  animation: bounce 1s ease-in-out 3;
 }
